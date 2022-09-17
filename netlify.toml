@@ -1,6 +1,6 @@
 [build]
-  base = "packages/pastebug"
-  publish = "packages/pastebug/dist"
+  base = "packages/pastebug/"
+  publish = "packages/pastebug/dist/"
   command = "quasar build"
 
 [build.environment]

@@ -1,10 +1,12 @@
 # Pastebug :bug:
+[![Netlify Status](https://api.netlify.com/api/v1/badges/753710fc-8744-4928-b0bb-4aed2e6cfced/deploy-status)](https://app.netlify.com/sites/pastebug/deploys)
 
 Quasar + Supabase Pastebin
 
+
 ## Quick Links
 
-:cyclone: [Live Demo](https://blogsley.netlify.app/)
+:cyclone: [Live Demo](https://pastebug.netlify.app/)
 
 ## Installation
 

@@ -1,0 +1,51 @@
+{
+  "name": "pastebug",
+  "version": "0.0.1",
+  "description": "Pastebin with Quasar and Supabase",
+  "productName": "Pastebug",
+  "author": "kfields <kurtisfields@gmail.com>",
+  "private": true,
+  "scripts": {
+    "lint": "eslint --ext .js,.ts,.vue ./",
+    "format": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "dependencies": {
+    "@codemirror/lang-javascript": "^6.0.2",
+    "@codemirror/lang-python": "^6.0.1",
+    "@codemirror/language-data": "^6.1.0",
+    "@codemirror/state": "^6.1.1",
+    "@codemirror/theme-one-dark": "^6.0.0",
+    "@highlightjs/vue-plugin": "^2.1.0",
+    "@quasar/extras": "^1.15.2",
+    "@supabase/supabase-js": "^1.35.6",
+    "@urql/exchange-graphcache": "^5.0.1",
+    "@urql/vue": "^1.0.2",
+    "axios": "^0.21.1",
+    "codemirror": "^6.0.1",
+    "graphql": "^16.6.0",
+    "highlight.js": "^11.6.0",
+    "pinia": "^2.0.11",
+    "quasar": "^2.6.0",
+    "vue": "^3.0.0",
+    "vue-codemirror": "^6.1.1",
+    "vue-router": "^4.0.0"
+  },
+  "devDependencies": {
+    "@quasar/app-vite": "^1.0.0",
+    "@types/node": "^12.20.21",
+    "@typescript-eslint/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^5.10.0",
+    "autoprefixer": "^10.4.2",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-vue": "^9.0.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.4"
+  },
+  "engines": {
+    "node": "^18 || ^16 || ^14.19",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  }
+}

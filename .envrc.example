@@ -1,0 +1,2 @@
+export VITE_SUPABASE_URL=https://<Reference ID>.supabase.co
+export VITE_SUPABASE_ANON_KEY=<Anonymous API Key>

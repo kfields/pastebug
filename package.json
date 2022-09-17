@@ -1,0 +1,12 @@
+{
+  "name": "pastebug",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "^5.4.3"
+  },
+  "resolutions": {},
+  "workspaces": [
+    "packages/*"
+  ]
+}

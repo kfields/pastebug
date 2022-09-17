@@ -1,0 +1,9 @@
+[build]
+  base = "packages/pastebug"
+  publish = "packages/pastebug/dist"
+  command = "quasar build"
+
+[build.environment]
+  NODE_VERSION = "16.15.1"
+  YARN_VERSION = "1.22.17"
+  NETLIFY_USE_YARN = "true"

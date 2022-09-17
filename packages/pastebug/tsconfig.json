@@ -1,0 +1,12 @@
+{
+  "extends": "@quasar/app-vite/tsconfig-preset",
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "models/*": ["models/*"],
+      "api/*": ["api/*"],
+      "abilities/*": ["abilities/*"]
+    },
+    "types": ["vue/ref-macros"],
+  },
+}

@@ -1,7 +1,5 @@
 import { RouteRecordRaw } from 'vue-router';
 
-import { useUserStore } from 'stores/user';
-
 const routes: RouteRecordRaw[] = [
   {
     path: '/',
@@ -21,27 +19,10 @@ const routes: RouteRecordRaw[] = [
         path: 'p/create',
         component: () => import('pages/paste/create/PasteCreatePage.vue'),
       },
-      //{ path: 'p/:id/edit/', component: () => import('pages/paste/update/PasteUpdatePage.vue'), props: true },
-      //{ path: 'p/:id', component: () => import('pages/paste/read/PasteReadPage.vue'), props: true },
-      { path: 'p/:id/preview/', component: () => import('pages/paste/read/PasteReadPage.vue'), props: true },
-      {
-        path: 'p/:id',
-        component: () => {
-          const { isSignedIn } = useUserStore();
-          if (isSignedIn) {
-            return import('pages/paste/update/PasteUpdatePage.vue');
-          } else {
-            return import('pages/paste/read/PasteReadPage.vue');
-          }
-        },
-        props: true,
-      },
-      /*
       {
         path: 'p/:id',
         component: () => import('pages/paste/PastePage.vue'),
       },
-      */
     ],
   },
 

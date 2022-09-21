@@ -1,17 +1,15 @@
 <template>
-  <q-page padding>
-    <div class="q-pb-sm">
-      <q-input autocomplete="title" v-model="paste.title" label="Title" />
-      <q-select v-model="kind" :options="options" label="Type" />
-    </div>
-    <CodeEditor :paste="paste" :key="kind" />
-    <q-page-sticky position="bottom-right" :offset="[18, 18]">
-      <q-btn fab color="primary" icon="save" @click="save" />
-    </q-page-sticky>
-    <Teleport to="#pastebug-navbox">
-      <PasteCreateNavbox @save="save" />
-    </Teleport>
-  </q-page>
+  <div class="q-pb-sm">
+    <q-input autocomplete="title" v-model="paste.title" label="Title" />
+    <q-select v-model="kind" :options="options" label="Type" />
+  </div>
+  <CodeEditor :paste="paste" :key="kind" />
+  <q-page-sticky position="bottom-right" :offset="[18, 18]">
+    <q-btn fab color="primary" icon="save" @click="save" />
+  </q-page-sticky>
+  <Teleport to="#pastebug-navbox">
+    <PasteCreateNavbox @save="save" />
+  </Teleport>
 </template>
 
 <script setup lang="ts">

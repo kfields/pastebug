@@ -17,7 +17,7 @@ const routes: RouteRecordRaw[] = [
       { path: 'p', component: () => import('pages/paste/PasteIndexPage.vue') },
       {
         path: 'p/create',
-        component: () => import('pages/paste/create/PasteCreatePage.vue'),
+        component: () => import('pages/paste/PasteCreatePage.vue'),
       },
       {
         path: 'p/:id',

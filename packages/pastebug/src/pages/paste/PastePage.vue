@@ -8,6 +8,8 @@
 import { markRaw, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import { useUserStore } from 'stores/user';
+
+import PasteCreate from 'components/paste/create/PasteCreate.vue';
 import PasteRead from 'components/paste/read/PasteRead.vue';
 import PasteUpdate from 'components/paste/update/PasteUpdate.vue';
 
@@ -45,6 +47,8 @@ function selectMode(value: string) {
         PasteView = markRaw(PasteRead);
       }
       break;
+    case 'create':
+      PasteView = markRaw(PasteCreate);
     case 'preview':
       PasteView = markRaw(PasteRead);
       break;

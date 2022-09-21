@@ -8,5 +8,6 @@
       "abilities/*": ["abilities/*"]
     },
     "types": ["vue/ref-macros"],
+    "jsx": "preserve",
   },
 }
